@@ -1,4 +1,13 @@
-<script>
-  var path = window.location.pathname;
-  window.location.replace('/?redirect=' + encodeURIComponent(path));
-</script>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>etf</title>
+  <script>
+    var currentPath = window.location.pathname + window.location.search;
+    window.location.replace('/?p=' + encodeURIComponent(currentPath));
+  </script>
+</head>
+<body>
+</body>
+</html>
