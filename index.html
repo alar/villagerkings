@@ -67,6 +67,15 @@
     <noscript>
         <link rel="stylesheet" href="styles.2408c5aebe4ba07e8c2f.css">
     </noscript>
+    <script>
+        (function() {
+          var params = new URLSearchParams(window.location.search);
+          var redirectPath = params.get('p');
+          if (redirectPath) {
+                window.history.replaceState(null, null, decodeURIComponent(redirectPath));
+          }
+        })();
+    </script>
 </head>
 <body id="VillagerKings">
 <app-root></app-root>
